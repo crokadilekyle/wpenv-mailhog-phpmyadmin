@@ -1,0 +1,10 @@
+{
+    "mappings": {
+            "wp-content": "./wp-content"
+    },
+    "config": {
+            "WP_DEBUG": "true",
+            "WP_DEBUG_LOG": "true",
+            "WP_DEBUG_DISPLAY": false
+    }
+}
