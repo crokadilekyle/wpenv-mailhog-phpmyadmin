@@ -1,6 +1,6 @@
 # WP ENV with Mailhog and PhpMyAdmin
 
-If you develop WordPress sites, themes or plugins locally and use WP ENV to manage your docker containers, this repo contains some bash scripts you can use to easily add MailHog and PHPMyAdmin containers to the Docker network that is spun up by WP ENV.
+If you develop WordPress sites, themes or plugins locally and use WP ENV to manage your docker containers, this repo contains some bash scripts you can use to easily add MailHog and PHPMyAdmin containers to the Docker network that is spun up by WP ENV.  If you want more details about how this works you can [check out my blog post here](https://twinwebdev.com/wp-env-with-mailhog-and-phpmyadmin/).
 
 *Note, these scripts assume that you will only have one Docker network running at a time.  If you tend to have more than one running, you will need to edit the `docker-up.sh` script to fit your needs.
 
