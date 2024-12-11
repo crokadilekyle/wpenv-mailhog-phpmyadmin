@@ -1,4 +1,5 @@
 #!/bin/bash
+contaner_name_prefix=$(basename "$PWD")
 
 wp-env start
 
@@ -12,5 +13,5 @@ network_id=${network%_default}  # Remove '_default' from network
 
 container=$(docker container ps --filter "name=${network_id}-mysql-1" --format "{{.ID}}")
 
-bash phpmyadmin.sh "$network" "$container"
-bash mailhog.sh "$network"
+bash phpmyadmin.sh "$network" "$container" "$contaner_name_prefix"
+bash mailhog.sh "$network" "$contaner_name_prefix"

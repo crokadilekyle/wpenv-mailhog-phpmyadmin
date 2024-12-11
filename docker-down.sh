@@ -1,7 +1,8 @@
 #!/bin/bash
+container_name_prefix=$(basename "$PWD")
 
-docker container stop project-name-phpmyadmin
-docker container rm project-name-phpmyadmin
-docker container stop project-name-mailhog
-docker container rm project-name-mailhog
+docker container stop "${container_name_prefix}-phpmyadmin"
+docker container rm "${container_name_prefix}-phpmyadmin"
+docker container stop "${container_name_prefix}-mailhog"
+docker container rm "${container_name_prefix}-mailhog"
 wp-env stop
